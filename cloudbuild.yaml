@@ -1,10 +1,10 @@
 steps:
-  - name: 'gcr.io/cloud-builders/apps0001'
+  - name: 'gcr.io/cloud-builders/gcloud'
     args: ['run', 'deploy', 'yc-digital-human', '--image', 'gcr.io/$PROJECT_ID/yc-digital-human', '--platform', 'managed', '--region', 'us-central1']
 images:
   - 'gcr.io/$PROJECT_ID/yc-digital-human'
 
-logsBucket: gs://your-logs-bucket
+logsBucket: gs://apps0001
 steps:
   - name: 'gcr.io/cloud-builders/gcloud'
     args: ['run', 'deploy', 'yc-digital-human', '--image', 'gcr.io/$PROJECT_ID/yc-digital-human', '--platform', 'managed', '--region', 'us-central1']
