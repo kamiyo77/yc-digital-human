@@ -3,7 +3,7 @@ steps:
     args: ['run', 'deploy', 'yc-digital-human', '--image', 'gcr.io/$PROJECT_ID/yc-digital-human', '--platform', 'managed', '--region', 'us-central1']
 images:
   - 'gcr.io/$PROJECT_ID/yc-digital-human'
-logsBucket: gs://108173400535-global-cloudbuild-logs
+logsBucket: gs://apps0100
 steps:
   - name: 'gcr.io/cloud-builders/gcloud'
     args: ['run', 'deploy', 'yc-digital-human', '--image', 'gcr.io/$PROJECT_ID/yc-digital-human', '--platform', 'managed', '--region', 'us-central1']
