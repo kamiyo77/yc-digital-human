@@ -3,3 +3,10 @@ steps:
     args: ['run', 'deploy', 'yc-digital-human', '--image', 'gcr.io/$PROJECT_ID/yc-digital-human', '--platform', 'managed', '--region', 'us-central1']
 images:
   - 'gcr.io/$PROJECT_ID/yc-digital-human'
+options:
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['run', 'deploy', 'yc-digital-human', '--image', 'gcr.io/$PROJECT_ID/yc-digital-human', '--platform', 'managed', '--region', 'us-central1']
+images:
+  - 'gcr.io/$PROJECT_ID/yc-digital-human'
